@@ -350,7 +350,7 @@ come back and condense on my own later / split for examples sake */
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  /* justify-content: space-around;  */ /*Causes formating error in experience for last item, come back and investigate later*/
   gap: 0.5rem;
 }
 
