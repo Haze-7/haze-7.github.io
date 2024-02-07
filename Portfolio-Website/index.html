@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayes Chiasson Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="media.css" >
+  </head>
+  <body>
+    <nav id="desktop-nav"> <!--Website Navigation on Desktop-->
+      <div class="logo">Hayes Chiasson</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav> <!--Hamburger menu Navigation-->
+    <nav id ="hamburger-nav">
+      <div class="logo">Hayes Chiasson</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links"> <!--targeted by document.querySelector javaScript -->
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav> <!--Profile Section-->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/haze-profile-pic.png" 
+        alt="Hayes Chiasson Profile Picture" 
+        class="about-pic"
+        >
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hayes Chiasson</h1>
+        <p class="section__text__p2">Frontend Developer</p> 
+        <div class="btn-container">
+          <button class="btn btn-color-2" 
+          onclick="window.open('./assets/hayes-resume.pdf')"> <!--Come back to update resume if needed-->
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedIn.png" 
+          alt="My LinkedIn Profile" 
+          class="icon" 
+          onclick="location.href='https://linkedin.com/in/hayes-chiasson-413955249/'"
+          >
+          <img src="./assets/github.png" 
+          alt="My Github Profile" 
+          class="icon" 
+          onclick="location.href='https://github.com/Haze-7'"
+          >
+        </div>
+      </div>
+    </section>
+    <section id="about"> <!--About Page Section-->
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container"> <!--Replace below picture with one of me-->
+          <img src="./assets/about-me.png"
+          alt="Profile Picture" 
+          class="about-pic" 
+          >
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <h3>Experience</h3>
+              <p>Software <br>Engineering</p> <!--Fill in Experience later-->
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" 
+              alt="Education icon"
+              class="icon"
+              >
+              <h3>Education</h3> <!--Fill in Education Info later-->
+              <p>B.Sc. Software Engineering <br> Minor in Digital Media Arts & Egineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Personal Paragraph about me. Blah blah blah blah blah blah</p> <!--Come back and write about me paragraph-->
+          </div>
+        </div>
+      </div> 
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+      >
+    </section>
+    <section id="experience"-->
+      <p class="section__text__p1">Explore My</p> <!--Change to Educaton later-->
+      <h1 class="title">Experience</h1> <!--Change to education / courses-->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>HTML</h3> <!--Fill in later 1-->
+                  <p>Experienced</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>CSS</h3> <!--Fill in later 2-->
+                  <p>Experienced</p> <!--Fill in w/ personal later-->
+                </div>
+              </article> <!--Experience list-->
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>JavaScript</h3> <!--Fill in later 3-->
+                  <p>Intermediate</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>Example 4</h3> <!--Fill in later 4-->
+                  <p>Basic</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>Example 5</h3> <!--Fill in later 5-->
+                  <p>Experienced</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>Example 6</h3> <!--Fill in later-->
+                  <p>Experienced</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>List 2 Ex 1</h3> <!--Fill in later 1-->
+                  <p>Experienced</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>List 2 Ex 2</h3> <!--Fill in later 2-->
+                  <p>Experienced</p> <!--Fill in w/ personal later-->
+                </div>
+              </article> <!--Experience list-->
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>List 2 Ex 3</h3> <!--Fill in later 3-->
+                  <p>Intermediate</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+                >
+                <div>
+                  <h3>List 2 Ex 4</h3> <!--Fill in later 4-->
+                  <p>Basic</p> <!--Fill in w/ personal later-->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+      >
+    </section>
+    <section id="projects"> <!--Profile Section-->
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Browse My Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" 
+            alt="Project 1" 
+            class="project-img"
+            > <!--Replace later with image of project 1-->
+          </div>
+          <h2 class="experience-subtitle project-title">Simple Paint Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/Haze-7/CSC-2463/tree/main/Prog1.2'"> <!--Fill in / Change Link Later--> 
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://haze-7.github.io/CSC-2463/Prog1.2/'"> <!--Fill in / Change Link Later-->
+              Live Demo
+            </button> 
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" 
+            alt="Project 2" 
+            class="project-img"
+            > <!--Replace later with image of project 2-->
+          </div>
+          <h2 class="experience-subtitle project-title">Burgundy Bank</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/Haze-7/Personal-Projects/tree/main/BurgundyBank'"> <!--Fill in / Change Link Later-->
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/Haze-7/Personal-Projects/tree/main/BurgundyBank'"> <!--Fill in / Change Link Later-->
+              Live Demo
+            </button>
+          </div> 
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" 
+            alt="Project 3" 
+            class="project-img"
+            > <!--Replace later with image of project 2-->
+          </div>
+          <h2 class="experience-subtitle project-title">Safe Cracker Game</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://haze-7.github.io/CSC-2463/Prog1.1/'"> <!--Fill in / Change Link Later-->
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://haze-7.github.io/CSC-2463/Prog1.2/'"> <!--Fill in / Change Link Later-->
+              Live Demo
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+      >
+    </section> 
+    <section id="contact"> <!--Contact Section-->
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container"> <!--Email Contact-->
+          <img src="./assets/email.png" 
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+          >
+          <p><a href="mailto:hayeschiasson1@yahoo.com">hayeschiasson1@yahoo.com</a></p> <!--Check / set prefered email later-->
+        </div>
+        <div class="contact-info-container"> <!--LinkedIn Contact-->
+          <img src="./assets/linkedin.png" 
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+          >
+          <p><a href="https://www.linkedin.com/in/hayes-chiasson-413955249/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container" >
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#">Return to Top</a></li>
+         </ul>
+       </div>
+      </nav>
+      <p>Copyright &#169; 2024 Hayes Chiasson. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>  
+</html>
